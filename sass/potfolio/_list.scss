@@ -1,0 +1,26 @@
+@media screen and (max-width: 767px) {
+  .list.porfolio {
+    display: block;
+  }
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+@media screen and (min-width: 768px) {
+  .list.porfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

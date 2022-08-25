@@ -1,0 +1,141 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-color-button);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms linear, visibility 250ms linear;
+  }
+
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobile-menu__container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .mobile-menu__close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+  .mobile-menu__list {
+    list-style: none;
+  }
+
+  .link-header {
+    display: block;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  .mobile-menu__list-phone {
+    display: block;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color-blue);
+    text-decoration: none;
+    margin-bottom: 32px;
+  }
+
+  .mobile-menu__list-mail {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    margin-bottom: 64px;
+  }
+
+  .mobile-menu__list-socials {
+    display: flex;
+  }
+
+  .mobile-menu__list-socials-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--text-color-blue);
+  }
+
+  .mobile-menu__list-socials-symbol {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu__close-btn {
+    display: none;
+  }
+
+  .mobile-menu__list {
+    list-style: none;
+  }
+
+  .mobile-menu__list-phone {
+    display: none;
+  }
+
+  .mobile-menu__list-mail {
+    display: none;
+  }
+
+  .mobile-menu__list-socials {
+    display: none;
+  }
+
+  .mobile-menu__list-socials-symbol {
+    display: none;
+  }
+}

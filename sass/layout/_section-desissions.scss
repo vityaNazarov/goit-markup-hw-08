@@ -1,0 +1,13 @@
+.section-desissions {
+  background-color: #2f303a;
+  padding: 200px 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
