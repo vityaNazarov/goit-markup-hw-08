@@ -1,6 +1,12 @@
+@media screen and (max-width: 767px) {
+  .footer__box {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-links {
   display: block;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 }
 
 .footer-links__title {
