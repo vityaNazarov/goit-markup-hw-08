@@ -58,9 +58,9 @@
     }
   }
 
-  // .porfolio__item {
-  //   margin-bottom: 30px;
-  // }
+  .porfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   .porfolio__link {
     text-decoration: none;
